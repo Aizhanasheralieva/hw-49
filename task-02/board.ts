@@ -3,7 +3,7 @@ const createChessboard = (size: number = 8) => {
     for (let i: number = 1; i < size; i++) {
         chessboard += '\n';
         for (let j: number = 1; j <= size; j++) {
-                const cell= (i + j) % 2 === 0
+                const cell= (i + j) % 2 === 0;
                 chessboard += cell ? "□" : "  ";
         }
     }
